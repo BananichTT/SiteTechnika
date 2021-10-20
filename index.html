@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <title>UselessTechnika</title>
+</head>
+<body>
+
+  <!-- Навигационная панель -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#">UslessTechnika</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+            <i class="fas fa-shopping-basket"></i>
+          </a>
+
+          <!-- Модальное окно -->
+
+          <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header text-white" style="background-color: #282626;">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td><img src="img/product/1.jpg" alt=""></td>
+                        <td><a href="#">Washer</a></td>
+                        <td>$499.99</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td><img src="img/product/2.jpg" alt=""></td>
+                        <td><a href="#">Toaster</a></td>
+                        <td>$289.89</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td><img src="img/product/3.jpg" alt=""></td>
+                        <td><a href="#">Mixer</a></td>
+                        <td>$150.90</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+            <i class="fas fa-user"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Sign In</a></li>
+            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Карусель изображений -->
+
+<div class="container-fluid my-carousel">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Карточка товара -->
+
+<section class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-3">
+       <div class="product-card">
+        <div class="product-thumb"><a href="#"><img src="img/product/1.jpg" alt=""></a>
+        </div>
+        <div class="product-details">
+          <h4><a href="#">Washer</a></h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur et reprehenderit nisi eius impedit corrupti voluptatem quas omnis necessitatibus culpa dolores at accusantium quaerat eaque, molestias suscipit incidunt inventore accusamus!</p>
+          <div class="product-bottom-details d-flex justify-content-between">
+            <div class="product-price">
+              <small>$600</small> $499.99
+            </div>
+            <div class="product-links">
+              <a href="#"><i class="fas fa-shopping-basket"></i></a>
+              <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+          </div>
+        </div>         
+      </div> 
+    </div>
+
+    <div class="col-lg-4 col-sm-6 mb-3">
+     <div class="product-card">
+      <div class="product-thumb"><a href="#"><img src="img/product/2.jpg" alt=""></a>
+      </div>
+      <div class="product-details">
+        <h4><a href="#">Toaster</a></h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur et reprehenderit nisi eius impedit corrupti voluptatem quas omnis necessitatibus culpa dolores at accusantium quaerat eaque, molestias suscipit incidunt inventore accusamus!</p>
+        <div class="product-bottom-details d-flex justify-content-between">
+          <div class="product-price">
+            <small>$300</small> $289.89
+          </div>
+          <div class="product-links">
+            <a href="#"><i class="fas fa-shopping-basket"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+          </div>
+        </div>
+      </div>         
+    </div> 
+  </div>
+
+  <div class="col-lg-4 col-sm-6 mb-3">
+   <div class="product-card">
+    <div class="product-thumb"><a href="#"><img src="img/product/3.jpg" alt=""></a>
+    </div>
+    <div class="product-details">
+      <h4><a href="#">Mixer</a></h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur et reprehenderit nisi eius impedit corrupti voluptatem quas omnis necessitatibus culpa dolores at accusantium quaerat eaque, molestias suscipit incidunt inventore accusamus!</p>
+      <div class="product-bottom-details d-flex justify-content-between">
+        <div class="product-price">
+          <small>$220</small> $150.90
+        </div>
+        <div class="product-links">
+          <a href="#"><i class="fas fa-shopping-basket"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+        </div>
+      </div>
+    </div>         
+  </div> 
+</div>
+</div>
+</div>
+</section>
+
+<!-- Подвал -->
+
+<footer>
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4>Information</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Payment and delivery</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4>Working Time</h4>
+          <ul class="list-unstyled">
+            <li>st Pushkina, d Kolotushkina</li>
+            <li>Mon - Fri: 8am - 5pm</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4>Contacts</h4>
+          <ul class="list-unstyled">
+            <li><a href="tel:89527735225">+7(934) 123-58-55</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4>Messangers</h4>
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
