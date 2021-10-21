@@ -215,6 +215,19 @@ footer{
 	text-align: justify;
 }
 
+.list-group a{
+	text-decoration: none;
+}
+
+.list-group li:hover{
+	background-color: #212529;
+	color: #fff;
+}
+
+.list-group{
+	padding-top: 50%;
+}
+
 @media (max-width: 575.98px) and (min-width: 320px) { 
 	.main{
 		display: flex;
@@ -231,5 +244,10 @@ footer{
 	.product-links span{
 		display: none;
 	}
+
+	.list-group{
+	padding-top: 10px;
+}
+
 }
 
