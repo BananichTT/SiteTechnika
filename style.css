@@ -28,6 +28,11 @@ a:hover{
 	color: #555;
 }
 
+footer{
+	
+	
+}
+
 /* HEADER */
 
 .navbar-dark .navbar-nav .nav-link {
@@ -68,7 +73,7 @@ a:hover{
 
 .my-carousel .carousel-item{
 	display: flex;
-	max-height: 700px;
+	max-height: 1000px;
 }
 
 .my-carousel .carousel-item img{
@@ -142,6 +147,7 @@ a:hover{
 .product-links a{
 	font-size: 20px;
 	margin-left: 10px;
+	text-decoration: none;
 }
 
 /*FOOTER*/
@@ -180,3 +186,50 @@ a:hover{
 	margin-right: 15px;
 	font-size: 20px; 
 }
+
+
+
+/*tovarcard Washer*/
+.main{
+	display: flex;
+	align-items: center;
+	padding: 2vw;
+}
+
+.main img{
+	width: 40vw;
+}
+
+.header{
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.washer{
+	padding: 100px;
+}
+
+.body p {
+	text-align: justify;
+}
+
+@media (max-width: 575.98px) and (min-width: 320px) { 
+	.main{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.main img{
+		width: 100vw;
+	}
+	.washer{
+		padding: 5px;
+	}
+
+	.product-links span{
+		display: none;
+	}
+}
+
