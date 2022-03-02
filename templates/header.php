@@ -22,17 +22,17 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
    <div class="container-fluid">
-     <a class="navbar-brand" href="#">SannyHome</a>
+     <a class="navbar-brand" href="index.php?page=index">SannyHome</a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.php?page=index">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="catalog.html">Catalog</a>
+          <a class="nav-link" href="index.php?page=catalog">Catalog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
@@ -53,9 +53,6 @@
             <li><a class="dropdown-item" href="#">Sign In</a></li>
             <li><a class="dropdown-item" href="#">Sign Up</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
         </li>
       </ul>
     </div>

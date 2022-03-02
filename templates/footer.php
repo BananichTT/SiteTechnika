@@ -9,7 +9,7 @@ session_start();
         <div class="col-md-3 col-6">
           <h4>Information</h4>
           <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php?page=index">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Payment and delivery</a></li>
             <li><a href="#">Contacts</a></li>
