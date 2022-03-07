@@ -16,10 +16,6 @@ img{
 	height: auto;
 }
 
-section{
-	padding: 50px 0;
-}
-
 a{
 	color: #111;
 }
@@ -132,7 +128,6 @@ a:hover{
 
 .product-price{
 	font-size: 18px;
-	color: ;
 	font-weight: 600;	 
 }
 
@@ -151,32 +146,34 @@ a:hover{
 
 /*FOOTER*/
 
-.footer{
+footer{
 	background-color: #dbdbdb;
+		padding: 50px 0;
+
 }
 
-.footer h4{
+footer h4{
 	text-transform: uppercase;
 	font-size: 16px;
 	border-bottom: 1px solid #666;
 	padding-bottom: 3px;
 }
 
-.footer a{
+footer a{
 	text-decoration: none;
 	transition: all .3s;
 }
 
-.footer a:hover{
+footer a:hover{
 	color: #605a5a;
 	text-decoration: underline;
 }
 
-.footer a, .footer li{
+footer a, .footer li{
 	color: #1e1b1b;
 }
 
-.footer li a{
+footer li a{
 	display: block;
 }
 
