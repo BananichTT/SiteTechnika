@@ -20,6 +20,16 @@ if (!isset($page)) {
     require('templates/main.php');
 }elseif($page == 'catalog'){
     require('templates/catalog.php'); 
+}elseif($page == 'tovarCart'){
+    $idg = $_GET['id'];
+    $good = [];
+    foreach($sql as $product){
+        if($product['id'] == $idg){
+            $good = $product;
+            break;
+        }
+    }
+    require('templates/tovarCart.php');
 }
 ?>
 
