@@ -1,4 +1,20 @@
 <div class="container content">
+	<div class="sort-block mb-4 mt-4">
+	<form action="">
+            <select onchange="location=value">
+                <option value="" selected="selected">Сорторовка по имени</option>
+                <option value="index.php?page=sort&id_sort=1">A-Z</option>
+                <option value="index.php?page=sort&id_sort=2">Z-A</option>
+            </select>
+
+            <select onchange="location=value">
+                <option value="" selected="selected">Сорторовка по цене</option>
+                <option value="index.php?page=sort&id_sort=3">по возрастанию</option>
+                <option value="index.php?page=sort&id_sort=4">по убыванию</option>
+            </select>
+
+        </form>
+	</div>
 	<div class="row">
 		<div class="col-lg-3">
 			<ul class="list-group">
@@ -6,11 +22,11 @@
 				$sql_cat = $link->query("select * from `category`");
 				foreach ($sql_cat as $cat) :
 				?>
-				<a href="ndex.php?page=product_cat&id_cat=<?php echo $cat['id_category']; ?>">
+				<a href="index.php?page=product_cat&id_cat=<?php echo $cat['id_category']; ?>">
 					<li class="list-group-item"><?php echo $cat['name']; ?></li>
 				</a>
 				<?php endforeach; ?>
-				<a href="ndex.php?page=product_cat&id_cat=0">
+				<a href="index.php?page=product_cat&id_cat=0">
 					<li class="list-group-item">Всё</li>
 				</a>
 			</ul>
@@ -25,7 +41,7 @@
 						foreach ($sql as $good):
 
 						?>
-						<div class="col-lg-4 col-sm-4 mb-4">
+						<div class="col-lg-4 col-sm-4 mb-4 mt-4">
 							<div class="product-card">
 								<div class="product-thumb"><a href="index.php?page=tovarCart&id=<?php echo $good['id']?>"><img src="<?php echo $good['imgs']; ?>" alt=""></a>
 								</div>
