@@ -50,8 +50,8 @@
             <i class="fas fa-user"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Sign In</a></li>
-            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+            <li><a class="dropdown-item" href="index.php?page=login">Sign In</a></li>
+            <li><a class="dropdown-item" href="index.php?page=register">Sign Up</a></li>
           </ul>
         </li>
       </ul>

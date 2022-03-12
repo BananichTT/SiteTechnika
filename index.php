@@ -60,6 +60,10 @@ if (!isset($page)) {
 
 
     require('templates/catalog.php');
+} elseif ($page == 'login') {
+    require('authorization/login.php');
+} elseif ($page == 'register') {
+    require('authorization/register.php');
 }
 ?>
 
