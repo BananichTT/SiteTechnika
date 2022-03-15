@@ -14,8 +14,8 @@ session_start();
           <thead>
             <td></td>
             <td>Наименование</td>
-            <td>Стоимость</td>
             <td>Колличество</td>
+            <td>Стоимость</td>
             <td>Итого</td>
           </thead>
           <tbody>
