@@ -39,9 +39,7 @@ session_start();
                 <tr>
                   <td><img width="50px" src="<?php echo $good_m['imgs']; ?>" /></td>
                   <td><?php echo $good_m['name']; ?></td>
-                  <td><input type="button" value="-" id="button_minus">
-                    <input type="number" step="1" min="1" max="10" id="num_count" name="quantity" value="<?php echo $kol; ?>" title="Qty">
-                    <input type="button" value="+" id="button_plus">
+                  <td><?php echo $kol; ?>
                   </td>
 
 

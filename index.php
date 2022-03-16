@@ -64,6 +64,8 @@ if (!isset($page)) {
     require('authorization/login.php');
 } elseif ($page == 'register') {
     require('authorization/register.php');
+}elseif ($page == 'success') {
+    require('authorization/profile.php');
 }
 ?>
 
