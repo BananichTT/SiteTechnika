@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if ($_SESSION['user']) {
-  header('Location: index.php?page=success');
-}
+// if ($_SESSION['user']) {
+//   header('Location: index.php?page=success');
+// }
 ?>
 
 <body class="login_body">
