@@ -2,13 +2,13 @@
 	<div class="sort-block mb-4 mt-4">
 		<form action="">
 			<select onchange="location=value">
-				<option value="" selected="selected">Сорторовка по имени</option>
+				<option value="" selected="selected">Сортировка по имени</option>
 				<option value="index.php?page=sort&id_sort=1">A-Z</option>
 				<option value="index.php?page=sort&id_sort=2">Z-A</option>
 			</select>
 
 			<select onchange="location=value">
-				<option value="" selected="selected">Сорторовка по цене</option>
+				<option value="" selected="selected">Сортировка по цене</option>
 				<option value="index.php?page=sort&id_sort=3">по возрастанию</option>
 				<option value="index.php?page=sort&id_sort=4">по убыванию</option>
 			</select>

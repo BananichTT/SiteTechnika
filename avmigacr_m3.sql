@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 16 2022 г., 22:16
+-- Время создания: Мар 18 2022 г., 02:19
 -- Версия сервера: 8.0.19
 -- Версия PHP: 7.1.33
 
@@ -34,6 +34,14 @@ CREATE TABLE `basket` (
   `number_product` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Дамп данных таблицы `basket`
+--
+
+INSERT INTO `basket` (`id`, `id_user`, `id_product`, `number_product`) VALUES
+(19, 7, 1, 1),
+(20, 7, 2, 1),
+(21, 7, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -66,25 +74,21 @@ CREATE TABLE `products` (
   `category` int NOT NULL,
   `desc` longtext NOT NULL,
   `imgs` varchar(45) NOT NULL,
-  `price` int NOT NULL
+  `price` int NOT NULL,
+  `productscol` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(1, 'Washer', 1, 'Прекрасная стиральная машина для вашего дома!', 'img\\product\\1.jpg', 499);
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(2, 'Toaster', 2, 'Просто тостер, ну что еще сказать.', 'img\\product\\2.jpg', 289);
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(3, 'Mixer', 2, 'Миксер для взбивания!', 'img\\product\\3.jpg', 150);
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(4, 'Toaster', 2, 'Просто тостер, ну что еще сказать.', 'img\\product\\2.jpg', 289);
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(5, 'Washer', 1, 'Прекрасная стиральная машина для вашего дома!', 'img\\product\\1.jpg', 499);
-INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`) VALUES
-(6, 'Mixer', 2, 'Миксер для взбивания!', 'img\\product\\3.jpg', 150);
+INSERT INTO `products` (`id`, `name`, `category`, `desc`, `imgs`, `price`, `productscol`) VALUES
+(1, 'Washer', 1, 'Прекрасная стиральная машина для вашего дома!', 'img\\product\\1.jpg', 499, ''),
+(2, 'Toaster', 2, 'Просто тостер, ну что еще сказать.', 'img\\product\\2.jpg', 289, ''),
+(3, 'Mixer', 2, 'Миксер для взбивания!', 'img\\product\\3.jpg', 150, ''),
+(4, 'Toaster', 2, 'Просто тостер, ну что еще сказать.', 'img\\product\\2.jpg', 289, ''),
+(5, 'Washer', 1, 'Прекрасная стиральная машина для вашего дома!', 'img\\product\\1.jpg', 499, ''),
+(6, 'Mixer', 2, 'Миксер для взбивания!', 'img\\product\\3.jpg', 150, '');
 
 -- --------------------------------------------------------
 
@@ -97,15 +101,18 @@ CREATE TABLE `users` (
   `user_name` varchar(45) DEFAULT NULL,
   `user_email` varchar(45) DEFAULT NULL,
   `user_login` varchar(45) DEFAULT NULL,
-  `user_password` varchar(45) DEFAULT NULL
+  `user_password` varchar(45) DEFAULT NULL,
+  `role` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id_user`, `user_name`, `user_email`, `user_login`, `user_password`) VALUES
-(7, 'Sany', 'sany@gmail.com', 'sany', '202cb962ac59075b964b07152d234b70');
+INSERT INTO `users` (`id_user`, `user_name`, `user_email`, `user_login`, `user_password`, `role`) VALUES
+(7, 'Sany', 'sany@gmail.com', 'sany', '202cb962ac59075b964b07152d234b70', 1),
+(20, 'admin', 'admin@admin.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 2),
+(21, 'Sany', 'sany@gmail.com', 'sasa', '4297f44b13955235245b2497399d7a93', 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -146,7 +153,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `basket`
 --
 ALTER TABLE `basket`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT для таблицы `category`
@@ -164,7 +171,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
