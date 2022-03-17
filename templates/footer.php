@@ -37,22 +37,17 @@ session_start();
                 }
             ?>
                 <tr>
-                  <td><img width="50px" src="<?php echo $good_m['imgs']; ?>" ></td>
+                  <td><img width="50px" src="<?php echo $good_m['imgs']; ?>"></td>
                   <td><?php echo $good_m['name']; ?></td>
-                  <td><?php echo $kol; ?>
-                  </td>
-
-
+                  <td><?php echo $kol; ?></td>
                   <td><?php echo $good_m['price'] . 'р'; ?></td>
                   <td><?php echo $kol * $good_m['price'] . 'р'; ?></td>
-                  <td align="right" colspan="5"><b> <a href="del_basket.php?del=<?=$good_m['id'] ?>">Удалить</a></b></td>
-
+                  <td align="right" colspan="5"><b> <a href="del_basket.php?del=<?= $good_m['id'] ?>">Удалить</a></b></td>
                 </tr>
             <?php
                 $Sum += $kol * $good_m['price'];
               }
             }
-            // Выводим итоговую сумму заказа
             ?>
             <tr>
               <td align="right" colspan="5"><b> <?php echo 'Всего: ' . $Sum ?></b></td>
@@ -61,7 +56,7 @@ session_start();
         </table>
       </div>
       <div class="modal-footer">
-      <b> <a href="add_basket.php">Оформить заказ</a></b>
+        <b> <a href="add_basket.php">Оформить заказ</a></b>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
@@ -98,7 +93,6 @@ session_start();
         <div class="footer-icons">
           <a href="#"><i class="fab fa-vk"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
     </div>

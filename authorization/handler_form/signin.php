@@ -11,12 +11,16 @@ if (mysqli_num_rows($check_user) > 0) {
     $_SESSION['user'] = [
         "id" => $user['id_user'],
         "name" => $user['user_name'],
-        "email" => $user['user_email']
+        "email" => $user['user_email'],
+        "role"  => $user['role']
     ];
-
- header('Location:  ../../index.php?page=success');
-} else {
-    $_SESSION['message'] = 'Неверный логин или пароль';
-    header('Location:  ../../index.php?page=login');
+    if ($_SESSION['user']['role'] == 1){
+        header('Location:  ../../index.php?page=success');
+    } elseif ($_SESSION['user']['role'] == 2){
+        header('Location: ../../index.php?page=admin');
+    } else {
+        $_SESSION['message'] = 'Неверный логин или пароль';
+        header('Location:  ../../index.php?page=login');
+    }
 }
 ?>

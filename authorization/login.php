@@ -8,9 +8,9 @@ session_start();
 
 <body class="login_body">
   <form class="mb-4 mt-4 ms-4" action="authorization/handler_form/signin.php" method="post">
-<div class=" col-lg-3 mb-3">
-    <label class="form-label">Логин</label>
-    <input type="text" class="form-control" name="login">
+    <div class=" col-lg-3 mb-3">
+      <label class="form-label">Логин</label>
+      <input type="text" class="form-control" name="login">
     </div>
     <div class="col-lg-3 mb-3">
       <label class="form-label">Пароль</label>

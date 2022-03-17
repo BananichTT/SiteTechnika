@@ -64,11 +64,12 @@ if (!isset($page)) {
     require('authorization/login.php');
 } elseif ($page == 'register') {
     require('authorization/register.php');
-}elseif ($page == 'success') {
+} elseif ($page == 'success') {
     require('authorization/profile.php');
+} elseif ($page == 'admin') {
+    require('authorization/admin.php');
 }
 ?>
-
 
 <?php
 require('templates/footer.php');
