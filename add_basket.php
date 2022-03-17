@@ -3,8 +3,7 @@ session_start();
 require_once 'connect.php';
 $add_product =  $_SESSION['add_product'];
 	$id_user = (int)$_SESSION['user']['id'];
-	// var_dump($id_user) ;
-	// print_r($add_product);
+
   
 if(isset($_SESSION['user'])){
 
@@ -22,5 +21,5 @@ if(isset($_SESSION['user'])){
         	$_SESSION['message'] = 'Для оформления заказа авторизуйтесь!';
 			header("Location: index.php?page=login");
         	
-        }
-?>
+        }     			
+?> 

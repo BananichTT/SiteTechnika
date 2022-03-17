@@ -17,7 +17,7 @@ $id_user = $_SESSION['user']['id'];
 
     <!-- Профиль -->
   
-    <form >
+    <form>
      
         <h2 style="margin: 10px 0;"><?= $_SESSION['user']['name'] ?></h2>
         <a href="#"><?= $_SESSION['user']['email'] ?></a>
