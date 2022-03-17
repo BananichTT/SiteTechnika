@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-if ($_SESSION['user']) {
-  header('Location: index.php?page=success');
-}
+// if ($_SESSION['user']) {
+//   header('Location: index.php?page=success');
+// }
 ?>
 
 <body class="login_body">
-  <form class="mb-4 mt-4 ms-4" action="authorization/handler_form/signin.php"" method="post">
+  <form class="mb-4 mt-4 ms-4" action="authorization/handler_form/signin.php" method="post">
 <div class=" col-lg-3 mb-3">
     <label class="form-label">Логин</label>
     <input type="text" class="form-control" name="login">

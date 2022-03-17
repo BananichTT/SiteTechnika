@@ -37,7 +37,7 @@ session_start();
                 }
             ?>
                 <tr>
-                  <td><img width="50px" src="<?php echo $good_m['imgs']; ?>" /></td>
+                  <td><img width="50px" src="<?php echo $good_m['imgs']; ?>" ></td>
                   <td><?php echo $good_m['name']; ?></td>
                   <td><?php echo $kol; ?>
                   </td>
@@ -45,7 +45,7 @@ session_start();
 
                   <td><?php echo $good_m['price'] . 'р'; ?></td>
                   <td><?php echo $kol * $good_m['price'] . 'р'; ?></td>
-                  <td align="right" colspan="5"><b> <a href="#">Удалить</a></b></td>
+                  <td align="right" colspan="5"><b> <a href="del_basket.php?del=<?=$good_m['id'] ?>">Удалить</a></b></td>
 
                 </tr>
             <?php

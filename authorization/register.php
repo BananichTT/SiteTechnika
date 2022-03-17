@@ -8,12 +8,12 @@ if ($_SESSION['user']) {
   <link rel="stylesheet" href="css/style.css">
   <form class="mb-4 mt-4 ms-4" action="authorization/handler_form/signup.php" method="post" enctype="multipart/form-data">
     <div class="col-lg-3 mb-3">
-      <label class="form-label">Имя</label>
-      <input type="text" class="form-control" name="name">
+      <label for="validationServer01" class="form-label">Имя</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" name="name" required>
     </div>
     <div class="col-lg-3 mb-3">
-      <label class="form-label">Логин</label>
-      <input type="text" class="form-control" name="login">
+      <label for="validationServerUsername" class="form-label">Логин</label>
+      <input type="text" class="form-control is-valid" id="validationServerUsername" name="login" required>
     </div>
     <div class="col-lg-3 mb-3">
       <label class="form-label">Почта</label>
