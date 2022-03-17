@@ -34,9 +34,6 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=catalog">Catalog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
       </ul>
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
