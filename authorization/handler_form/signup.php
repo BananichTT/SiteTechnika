@@ -18,7 +18,7 @@ if (mysqli_num_rows($check_user) > 0) {
     if ($password === $password_confirm) {
         $password = md5($password);
 
-        mysqli_query($link, "INSERT INTO `users` (`id_user`, `user_name`, `user_email`, `user_login`, `user_password`, `role`) VALUES (NULL, '$name', '$email', '$login', '$password', `1`)");
+        mysqli_query($link, "INSERT INTO `users` (`id_user`, `user_name`, `user_email`, `user_login`, `user_password`, `role`) VALUES (NULL, '$name', '$email', '$login', '$password', 1)");
 
         $_SESSION['message'] = 'Регистрация прошла успешно!';
         header('Location: ../../index.php?page=login');
